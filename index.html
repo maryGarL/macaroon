@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Macaroon</title>
+  <title>Macarons</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<h1> Ready For a New Social Life</h1>
-<h2>Find out what's happening!.
-</br>Connect now!</h2>
-<div class="nav">
-<form name="mine" action="timeline.html" onsubmit="return validate()">
-  <label class="texto">Email:</label>
-<input id="persona" type="text" class="username" placeholder="Username" />
-<span id= valida1 ></span>
-  <label class="texto">Password:</label>
-<input id= "contra" type="password" class="password" placeholder="Password" />
-<span id= valida2 ></span>
-<input type="submit" value="Sign In" class="button" alt=""/>
+<form  action="timeline.html" onsubmit="return validate()">
+  <div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input id="usuario" type="email" placeholder="Username"/><br>
+    <span id="alerta"></span>
+		<h3>Password:</h3>
+    <input type="password" placeholder="Password"/>
+    <span id="error"></span>
+    <br>
+    <input id="contra" type="submit" value="Sign In" class="button"/>
+
 </form>
 </div>
 </body>
